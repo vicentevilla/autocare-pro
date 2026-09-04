@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoCare Pro — Repuestos y Accesorios Automotrices</title>
+
+  <!-- Acá se conecta el CSS. Ruta relativa: desde este archivo, entra a la carpeta css/ -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER: logo + navegación. Se repite en TODAS las páginas del sitio -->
+  <header>
+    <a href="index.html" class="logo">AutoCare Pro</a>
+    <nav>
+      <ul>
+        <li><a href="#aceites">Aceites &amp; Filtros</a></li>
+        <li><a href="#detailing">Detailing &amp; Limpieza</a></li>
+        <li><a href="#electricidad">Ampolletas &amp; Electricidad</a></li>
+        <li><a href="#accesorios">Accesorios</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#carrito">Carrito (<span id="contador-carrito">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN: el contenido único de esta página (Home) -->
+  <main>
+
+    <!-- SECTION: hero con buscador destacado. Es parte de la página, no tiene sentido solo -->
+    <section class="hero">
+      <h1>Todo para el mantenimiento de tu vehículo</h1>
+      <p>Repuestos, lubricantes y accesorios con despacho directo o retiro en tienda.</p>
+      <form role="search">
+        <label for="buscador">Buscar producto o repuesto</label>
+        <input type="search" id="buscador" name="buscador" placeholder="Ej: filtro de aceite Toyota">
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- SECTION: mantenimiento preventivo -->
+    <section id="aceites" class="grid-producto">
+      <h2>Mantenimiento preventivo</h2>
+
+      <!-- ARTICLE: cada producto tiene sentido leído fuera de contexto -->
+      <article class="producto" data-precio="15990">
+        <h3>Aceite sintético 5W-30 (4L)</h3>
+        <p>Lubricante de alto rendimiento para motores modernos.</p>
+        <p class="precio">$15.990</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </article>
+
+      <article class="producto" data-precio="6990">
+        <h3>Filtro de aceite universal</h3>
+        <p>Compatible con la mayoría de motores 4 cilindros.</p>
+        <p class="precio">$6.990</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </article>
+    </section>
+
+    <section id="detailing" class="grid-producto">
+      <h2>Detailing & Limpieza</h2>
+      <article class="producto" data-precio="24990">
+        <h3>Shampoo para auto (1L)</h3>
+        <p>Formula suave para limpiar la pintura sin dañarla.</p>
+        <p class="precio">$24.990</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </article>
+      
+      <article class="producto" data-precio="19990">
+        <h3>Cera de protección (250ml)</h3>
+        <p>Protege la pintura contra rayones y manchas.</p>
+        <p class="precio">$19.990</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </article>
+
+      <article class="producto" data-precio="8990">
+        <h3> Agua desmineralizada (1L)</h3>
+        <p>Perfecta para lavar tu auto sin dejar marcas.</p>
+        <p class="precio">$8.990</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </article>
+    </section>
+
+    <section id="electricidad" class="grid-producto">
+      <h2>Ampolletas & Electricidad</h2>
+      <article class="producto" data-precio="12990">
+        <h3>Ampolleta LED H4</h3>
+        <p>Iluminación potente y eficiente para tu vehículo.</p>
+        <p class="precio">$12.990</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </article>
+
+      <article class="producto" data-precio="7990">
+        <h3>Fusible estándar (pack 10)</h3>
+        <p>Protege los circuitos eléctricos de tu auto.</p>
+        <p class="precio">$7.990</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </article>
+    </section>
+
+    <section id="accesorios" class="grid-producto">
+      <h2>Accesorios</h2>
+      <article class="producto" data-precio="15990">
+        <h3>Alfombra de goma para auto</h3>
+        <p>Protege el interior de tu vehículo contra suciedad y humedad.</p>
+        <p class="precio">$15.990</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </article>
+
+      <article class="producto" data-precio="12990">
+        <h3>Porta celular magnético</h3>
+        <p>Fija tu teléfono de manera segura mientras conduces.</p>
+        <p class="precio">$12.990</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </article>
+    </section>
+
+    <!-- SECTION: banner de kits de limpieza -->
+    <section class="banner-promo">
+      <h2>Kit de detailing completo</h2>
+      <p>Shampoo, cera y paños de microfibra para dejar tu auto como nuevo.</p>
+      <a href="#detailing" class="btn">Ver kits</a>
+    </section>
+
+    <!-- SECTION: blog -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <article>
+        <h3>¿Cada cuántos kilómetros debes cambiar el aceite del motor?</h3>
+        <p>Te contamos los plazos recomendados según tipo de aceite...</p>
+      </article>
+      <article>
+        <h3>Cómo lavar tu auto sin dañar la pintura: Guía paso a paso</h3>
+        <p>Los errores más comunes al lavar tu vehículo en casa...</p>
+      </article>
+    </section>
+
+    <section id="registro">
+      <h2>Crear cuenta</h2>
+      <form id="form-registro">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave" autocomplete="new-password" required minlength="8">
+
+        <button type="submit">Registrarse</button>
+      </form>
+      <p id="mensaje-error"></p>
+    </section>
+  </main>
+
+  <!-- FOOTER: se repite en todas las páginas -->
+  <footer>
+    <p>&copy; 2026 AutoCare Pro. Todos los derechos reservados.</p>
+  </footer>
+
+  <!--
+    El script va AL FINAL del body (o con "defer" en el head).
+    Motivo: cuando el navegador llega acá, todo el HTML de arriba ya existe,
+    así que el JS puede "encontrar" los botones, inputs, etc. sin errores.
+  -->
+  <script src="js/script.js"></script>
+</body>
+</html>
