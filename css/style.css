@@ -1,12 +1,3 @@
-/*
-  Esto es solo para PROBAR que el link entre HTML y CSS funciona.
-  El diseño real (colores, tipografía, layout con Flexbox/Grid) lo hacemos
-  completo en la Sesión 2. Por ahora, si ves el fondo del header gris,
-  significa que la conexión HTML <-> CSS está funcionando.
-*/
-
-/* Reset básico: casi todo proyecto parte así.
-   Por defecto el navegador le pone márgenes/paddings raros a body, ul, etc. */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,6 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #cccccc7e;
 }
 
 header {
@@ -26,13 +18,14 @@ header {
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .producto {
   border: 1px solid #ccc;
   padding: 1rem;
-  margin: 1rem;
+  margin: 2rem;
+  background-color: rgba(255, 255, 0, 0.781);
 }
 
 .grid-producto {
@@ -45,4 +38,12 @@ nav ul {
   list-style-type: none;
   display: flex;
   gap: 1.5rem;
+}
+
+.agregar-carrito {
+  background-color: rgba(255, 0, 0, 0.63);
+}
+
+.banner-promo {
+  border: 2px solid palevioletred;
 }

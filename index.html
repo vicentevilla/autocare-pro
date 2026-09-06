@@ -46,6 +46,7 @@
       <!-- ARTICLE: cada producto tiene sentido leído fuera de contexto -->
       <article class="producto" data-precio="15990">
         <h3>Aceite sintético 5W-30 (4L)</h3>
+        <img src="img/Aceite5w-40.png" alt="Aceite 5W-40" width="50" height="70">
         <p>Lubricante de alto rendimiento para motores modernos.</p>
         <p class="precio">$15.990</p>
         <button class="agregar-carrito">Agregar al carrito</button>
@@ -53,6 +54,7 @@
 
       <article class="producto" data-precio="6990">
         <h3>Filtro de aceite universal</h3>
+        <img src="img/Filtro.jpg" alt="Filtro aceite universal" width="70" height="70">
         <p>Compatible con la mayoría de motores 4 cilindros.</p>
         <p class="precio">$6.990</p>
         <button class="agregar-carrito">Agregar al carrito</button>
@@ -63,6 +65,7 @@
       <h2>Detailing & Limpieza</h2>
       <article class="producto" data-precio="24990">
         <h3>Shampoo para auto (1L)</h3>
+        <img src="img/Shampoo.jpg" alt="Shampoo para auto" width="80" height="70">
         <p>Formula suave para limpiar la pintura sin dañarla.</p>
         <p class="precio">$24.990</p>
         <button class="agregar-carrito">Agregar al carrito</button>
@@ -129,42 +132,4 @@
       <h2>Blog</h2>
       <article>
         <h3>¿Cada cuántos kilómetros debes cambiar el aceite del motor?</h3>
-        <p>Te contamos los plazos recomendados según tipo de aceite...</p>
-      </article>
-      <article>
-        <h3>Cómo lavar tu auto sin dañar la pintura: Guía paso a paso</h3>
-        <p>Los errores más comunes al lavar tu vehículo en casa...</p>
-      </article>
-    </section>
-
-    <section id="registro">
-      <h2>Crear cuenta</h2>
-      <form id="form-registro">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
-
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" autocomplete="email" required>
-
-        <label for="clave">Contraseña:</label>
-        <input type="password" id="clave" name="clave" autocomplete="new-password" required minlength="8">
-
-        <button type="submit">Registrarse</button>
-      </form>
-      <p id="mensaje-error"></p>
-    </section>
-  </main>
-
-  <!-- FOOTER: se repite en todas las páginas -->
-  <footer>
-    <p>&copy; 2026 AutoCare Pro. Todos los derechos reservados.</p>
-  </footer>
-
-  <!--
-    El script va AL FINAL del body (o con "defer" en el head).
-    Motivo: cuando el navegador llega acá, todo el HTML de arriba ya existe,
-    así que el JS puede "encontrar" los botones, inputs, etc. sin errores.
-  -->
-  <script src="js/script.js"></script>
-</body>
-</html>
+        <p>Te contamos los plazos recomendados según tipo de
