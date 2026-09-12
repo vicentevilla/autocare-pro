@@ -146,7 +146,17 @@
         <p>Los errores más comunes al lavar tu vehículo en casa...</p>
       </article>
     </section>
-    
+
+    <section id="tutorial-video">
+      <h2>Video tutorial</h2>
+      <video width="480" controls poster="img/kit.png">
+      <source src="video/cambio-aceite.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de este video.
+      </video>
+      <p>Aprende a revisar el nivel de aceite de tu vehículo en 3 minutos.</p>
+    </section>
+
+
     <!--section: Registro-->
     <section id="registro">
       <h2>Crear cuenta</h2>
@@ -171,16 +181,10 @@
 
   </main>
 
-  <!-- FOOTER: se repite en todas las páginas -->
   <footer>
     <p>&copy; 2026 AutoCare Pro. Todos los derechos reservados.</p>
   </footer>
 
-  <!--
-    El script va AL FINAL del body (o con "defer" en el head).
-    Motivo: cuando el navegador llega acá, todo el HTML de arriba ya existe,
-    así que el JS puede "encontrar" los botones, inputs, etc. sin errores.
-  -->
   <script src="js/script.js"></script>
 </body>
 </html>
