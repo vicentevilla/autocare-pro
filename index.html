@@ -126,7 +126,7 @@
       </article>
     </section>
 
-    <!-- SECTION: banner de kits de limpieza -->
+    <!--section: banner de kits de limpieza -->
     <section class="banner-promo">
       <h2>Kit de detailing completo</h2>
       <img src="img/kit.png" alt="Kit lavado vehiculo" width="120" height="100">
@@ -134,7 +134,7 @@
       <a href="#detailing" class="btn">Ver kits</a>
     </section>
 
-    <!-- SECTION: blog -->
+    <!--section: blog -->
     <section id="blog">
       <h2>Blog</h2>
       <article>
@@ -146,23 +146,29 @@
         <p>Los errores más comunes al lavar tu vehículo en casa...</p>
       </article>
     </section>
-
+    
+    <!--section: Registro-->
     <section id="registro">
       <h2>Crear cuenta</h2>
-      <form id="form-registro">
+      <form id="form-registro" novalidate>
         <label for="nombre">Nombre completo:</label>
         <input type="text" id="nombre" name="nombre" autocomplete="name" required>
-
+        <span class="error-campo" id="error-nombre"></span>
+    
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" autocomplete="email" required>
-
+        <span class="error-campo" id="error-email"></span>
+    
         <label for="clave">Contraseña:</label>
         <input type="password" id="clave" name="clave" autocomplete="new-password" required minlength="8">
+        <small class="sugerencia">Debe tener mínimo 8 caracteres, una mayúscula y un número.</small>
+        <span class="error-campo" id="error-clave"></span>
 
         <button type="submit">Registrarse</button>
       </form>
-      <p id="mensaje-error"></p>
+      <p id="mensaje-error" role="alert"></p>
     </section>
+
   </main>
 
   <!-- FOOTER: se repite en todas las páginas -->
