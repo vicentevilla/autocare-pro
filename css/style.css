@@ -172,3 +172,19 @@ footer {
   color: white;
   margin-top: 2rem;
 }
+
+/* Responsive: pantallas chicas */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+ 
+  nav ul {
+    justify-content: center;
+  }
+ 
+  .producto {
+    max-width: 100%;
+  }
+}
