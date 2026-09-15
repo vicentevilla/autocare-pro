@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Carrito — AutoCare Pro</title>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+  <header id="top">
+    <a href="index.html" class="logo">AutoCare Pro</a>
+    <nav>
+      <ul>
+        <li><a href="index.html#aceites">Aceites &amp; Filtros</a></li>
+        <li><a href="index.html#detailing">Detailing &amp; Limpieza</a></li>
+        <li><a href="index.html#electricidad">Ampolletas &amp; Electricidad</a></li>
+        <li><a href="index.html#accesorios">Accesorios</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="index.html#registro">Crear cuenta</a></li>
+        <li><a href="carrito.html">Carrito (<span id="contador-carrito">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+    <section id="pagina-carrito">
+      <h1>Tu carrito de compras</h1>
+ 
+      <table id="tabla-carrito">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-carrito"></tbody>
+      </table>
+ 
+      <p id="carrito-vacio-mensaje" hidden>
+        Aún no has agregado productos. <a href="index.html">Ir a la tienda</a>
+      </p>
+ 
+      <div class="carrito-resumen">
+        <p>Total: <span id="carrito-total">$0</span></p>
+        <button id="vaciar-carrito" type="button">Vaciar carrito</button>
+        <a href="index.html" class="btn">Seguir comprando</a>
+      </div>
+    </section>
+  </main>
+ 
+  <footer>
+    <div class="footer-col">
+      <h3>AutoCare Pro</h3>
+      <p>Tu tienda de confianza para el cuidado de tu vehículo.</p>
+    </div>
+ 
+    <div class="footer-col">
+      <h3>Explora</h3>
+      <ul>
+        <li><a href="index.html#aceites">Aceites &amp; Filtros</a></li>
+        <li><a href="index.html#detailing">Detailing &amp; Limpieza</a></li>
+        <li><a href="index.html#accesorios">Accesorios</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+      </ul>
+    </div>
+ 
+    <div class="footer-col">
+      <h3>Síguenos</h3>
+      <ul>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+ 
+    <div class="footer-col">
+      <a href="#top" class="volver-arriba">Volver arriba ↑</a>
+    </div>
+ 
+    <p class="footer-copy">&copy; 2026 AutoCare Pro. Todos los derechos reservados.</p>
+  </footer>
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>
