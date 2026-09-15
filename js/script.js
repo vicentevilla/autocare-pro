@@ -1,24 +1,46 @@
 // Esto es solo para PROBAR que el link entre HTML y JS funciona.
 console.log("AutoCare Pro cargado ✅");
 
+// CARRITO DE COMPRAS
 const botones = document.querySelectorAll('.agregar-carrito');
 let contadorCarrito = 0;
 let totalCarrito = 0;
 const contadorSpan = document.querySelector('#contador-carrito');
+const listaCarrito = document.querySelector('#lista-carrito');
+const totalSpan = document.querySelector('#carrito-total');
+const carritoItems = [];
  
 botones.forEach(function (boton) {
   boton.addEventListener('click', function () {
     const producto = boton.closest('.producto');
+    const nombre = producto.querySelector('h3').textContent;
     const precio = Number(producto.dataset.precio);
+ 
+    carritoItems.push({ nombre, precio });
     contadorCarrito++;
     totalCarrito += precio;
-    contadorSpan.textContent = `${contadorCarrito} - $${totalCarrito}`;
+    contadorSpan.textContent = contadorCarrito;
+ 
+    renderCarrito();
   });
 });
  
-// ============================
+function renderCarrito() {
+  if (carritoItems.length === 0) {
+    listaCarrito.innerHTML = '<li class="carrito-vacio">Aún no has agregado productos.</li>';
+  } else {
+    listaCarrito.innerHTML = carritoItems
+      .map(function (item) {
+        return '<li><span>' + item.nombre + '</span><span>$' + item.precio.toLocaleString('es-CL') + '</span></li>';
+      })
+      .join('');
+  }
+  totalSpan.textContent = 'Total: $' + totalCarrito.toLocaleString('es-CL');
+}
+ 
+renderCarrito();
+
 // VALIDACIÓN DEL FORMULARIO DE REGISTRO
-// ============================
 const formulario = document.querySelector('#form-registro');
 const mensajeError = document.querySelector('#mensaje-error');
  
