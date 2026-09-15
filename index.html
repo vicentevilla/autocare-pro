@@ -6,6 +6,9 @@
   <title>AutoCare Pro — Repuestos y Accesorios Automotrices</title>
 
   <!-- Acá se conecta el CSS. Ruta relativa: desde este archivo, entra a la carpeta css/ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,7 +38,7 @@
       <h1>Todo para el mantenimiento de tu vehículo</h1>
       <p>Repuestos, lubricantes y accesorios con despacho directo o retiro en tienda.</p>
       <form role="search">
-        <label for="buscador">Buscar producto o repuesto</label>
+        <label for="buscador" class="sr-only">Buscar producto o repuesto</label>
         <input type="search" id="buscador" name="buscador" placeholder="Ej: filtro de aceite Toyota">
         <button type="submit">Buscar</button>
       </form>
