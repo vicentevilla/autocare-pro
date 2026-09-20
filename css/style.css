@@ -71,6 +71,9 @@ h2 {
   gap: 1.2rem;
   flex-wrap: wrap;
 }
+.grid-producto h2 {
+  flex-basis: 100%;
+}
  
 .producto {
   border: 1px solid #ddd;
